@@ -45,6 +45,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbProgram = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +95,7 @@
             // rbM
             // 
             this.rbM.AutoSize = true;
-            this.rbM.Location = new System.Drawing.Point(159, 302);
+            this.rbM.Location = new System.Drawing.Point(151, 275);
             this.rbM.Name = "rbM";
             this.rbM.Size = new System.Drawing.Size(48, 17);
             this.rbM.TabIndex = 5;
@@ -104,7 +106,7 @@
             // rbF
             // 
             this.rbF.AutoSize = true;
-            this.rbF.Location = new System.Drawing.Point(223, 302);
+            this.rbF.Location = new System.Drawing.Point(205, 275);
             this.rbF.Name = "rbF";
             this.rbF.Size = new System.Drawing.Size(59, 17);
             this.rbF.TabIndex = 6;
@@ -115,7 +117,7 @@
             // cbDay
             // 
             this.cbDay.FormattingEnabled = true;
-            this.cbDay.Location = new System.Drawing.Point(70, 363);
+            this.cbDay.Location = new System.Drawing.Point(67, 328);
             this.cbDay.Name = "cbDay";
             this.cbDay.Size = new System.Drawing.Size(56, 21);
             this.cbDay.TabIndex = 7;
@@ -123,7 +125,7 @@
             // cbMonth
             // 
             this.cbMonth.FormattingEnabled = true;
-            this.cbMonth.Location = new System.Drawing.Point(151, 363);
+            this.cbMonth.Location = new System.Drawing.Point(129, 328);
             this.cbMonth.Name = "cbMonth";
             this.cbMonth.Size = new System.Drawing.Size(56, 21);
             this.cbMonth.TabIndex = 8;
@@ -131,7 +133,7 @@
             // cbYear
             // 
             this.cbYear.FormattingEnabled = true;
-            this.cbYear.Location = new System.Drawing.Point(226, 363);
+            this.cbYear.Location = new System.Drawing.Point(191, 328);
             this.cbYear.Name = "cbYear";
             this.cbYear.Size = new System.Drawing.Size(56, 21);
             this.cbYear.TabIndex = 9;
@@ -184,7 +186,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(66, 299);
+            this.label5.Location = new System.Drawing.Point(66, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 20);
             this.label5.TabIndex = 14;
@@ -194,17 +196,39 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(66, 340);
+            this.label6.Location = new System.Drawing.Point(63, 305);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 20);
             this.label6.TabIndex = 15;
             this.label6.Text = "Date of Birth";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(63, 352);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 20);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Program to apply";
+            // 
+            // cbProgram
+            // 
+            this.cbProgram.FormattingEnabled = true;
+            this.cbProgram.Location = new System.Drawing.Point(67, 385);
+            this.cbProgram.Name = "cbProgram";
+            this.cbProgram.Size = new System.Drawing.Size(215, 21);
+            this.cbProgram.TabIndex = 17;
+            this.cbProgram.Text = "-Select Program-";
+            this.cbProgram.SelectedIndexChanged += new System.EventHandler(this.Form1_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(387, 497);
+            this.Controls.Add(this.cbProgram);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -248,6 +272,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.ComboBox cbProgram;
     }
 }
 
